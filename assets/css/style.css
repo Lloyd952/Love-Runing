@@ -1,11 +1,14 @@
-/* Asteriks wildcard selector to override default styles added by the browser */
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+/* Asterisk wildcard selector to override default styles added by the browser */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-/* Body */
+/* General styles */
 body {
     min-height: 100vh;
     display: flex;
@@ -34,7 +37,7 @@ header a {
 }
 
 h1 {
-    font-family: 'oswald', sans-serif;
+    font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #252525;
@@ -54,8 +57,7 @@ h1 {
     border-bottom: 1px solid #3a3a3a;
 }
 
-/* navbar styles with dropdown toggle */
-
+/* Navbar styles with dropdown toggle */
 nav {
     position: absolute;
     background-color: #ffffff;
@@ -67,8 +69,7 @@ nav {
     top: 100%;
 }
 
-/* Nav Toggle */   
-
+/* Nav toggle */
 #nav-toggle:checked~nav {
     display: block;
 }
@@ -78,15 +79,17 @@ nav {
 }
 
 .nav-toggle-label {
-    font-size:  2rem;
+    font-size: 2rem;
 }
 
-/* Main */
+/* Main content */
 main {
     background-color: lightblue;
-    /* Make main element take any surplus space */
+    /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
+    margin-top: 47px;
 }
+
 /* Footer */
 footer {
     background-color: orange;
