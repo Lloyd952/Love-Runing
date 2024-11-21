@@ -166,7 +166,7 @@ main {
     flex-wrap: wrap;
 }
 
-#times > div {
+#times div {
     color: #fafafa;
     background-color: rgba(0, 0, 0, .6);
     padding: 15px;
